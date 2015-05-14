@@ -16,7 +16,7 @@ public class LightningDistanceComputer {
 		
 		System.out.println("Seconds took for you to hear the lightning: ");
 		time = scn.nextDouble();
-		double distance = time *= soundDistanceOffset;
+		double distance = time * soundDistanceOffset;
 		System.out.println("The lightning was " + distance + " feet away.");
 		
 		
