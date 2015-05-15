@@ -1,14 +1,21 @@
-
+import java.util.*;
 public class BubbleSort {
 
-	public static void main(String args[]){
+	public static void main(String args[]) throws java.io.IOException{
 		
-		int nums[] = new int[10];
+		Scanner scn = new Scanner(System.in);
+		int nums[] = new int [10];
+		
+		for(int i = 0; i < nums.length; i++){
+			System.out.print("Enter an integer: ");
+			nums[i] = scn.nextInt();
+		}
 		
 		System.out.println("Original array: ");
 		for(int i = 0; i < nums.length; i++){
-			System.out.print(nums[i] + " ");
+			System.out.println(nums[i] + " ");
 		}
+		
 		System.out.println();
 		
 		int tmp; //temporary variable
@@ -22,7 +29,8 @@ public class BubbleSort {
 					nums[b-1] = nums[b];
 					nums[b] = tmp;
 				}
-			
+		
+		System.out.println();
 		System.out.println("\nSorted array;");
 		for(int i = 0; i < nums.length; i++){
 			System.out.print(nums[i] + " ");
