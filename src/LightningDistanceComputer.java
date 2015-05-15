@@ -8,7 +8,6 @@ public class LightningDistanceComputer {
 	 * reach you
 	 */
 	
-	
 	public static void main(String args[]){
 		Scanner scn = new Scanner(System.in);
 		double soundDistanceOffset = 1100;
@@ -18,7 +17,5 @@ public class LightningDistanceComputer {
 		time = scn.nextDouble();
 		double distance = time * soundDistanceOffset;
 		System.out.println("The lightning was " + distance + " feet away.");
-		
-		
 	}
 }
