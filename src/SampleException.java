@@ -2,19 +2,15 @@ class NonIntResultException extends Exception {
 	
 	int n;
 	int d;
-	
 	NonIntResultException(int i, int j){
 		n = i;
 		d = j;
 	}
-	
 	public String toString(){
-		return "Result of " + n + " / " + d + " is non-integer";
+		return "Result of " + n + " / " + d + " is non-integer.";
 	}
 }
-
 public class SampleException {
-
 	public static void main(String args[]) throws NonIntResultException{
 		
 		int numerator[] = { 4, 8, 15, 32, 64, 127, 256, 512 };
@@ -36,8 +32,9 @@ public class SampleException {
 			catch(NonIntResultException e){
 				System.out.println(e);
 			}
-			
 		}
 	}
 }
+
+
 
