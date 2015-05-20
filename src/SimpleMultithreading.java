@@ -22,7 +22,7 @@ class MyThread implements Runnable{
 		catch (InterruptedException e){
 			System.out.println(thrdName + " interrupted.");
 		}
-		System.out.println(thrdName + " terminating..");
+		System.out.println(thrdName + " terminating...");
 	}
 }
 public class SimpleMultithreading {
@@ -31,7 +31,7 @@ public class SimpleMultithreading {
 		System.out.println("Main thread starting..");
 		
 		//Construct a MyThread object
-		MyThread mt = new MyThread("Child #1");
+		MyThreads mt = new MyThreads("Child #1");
 		
 		//construct a thread from mt
 		Thread newThrd = new Thread(mt);
@@ -39,7 +39,7 @@ public class SimpleMultithreading {
 		//start the execution of the thread
 		newThrd.start();
 		
-		for(int i = 0; i < 50; i++){
+		for(int i = 0; i < 70; i++){
 			System.out.print(".");
 			try{
 				Thread.sleep(100);
@@ -51,3 +51,6 @@ public class SimpleMultithreading {
 		System.out.println("Main thread ending.");
 	}
 }
+
+
+
