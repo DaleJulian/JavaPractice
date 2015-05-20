@@ -38,8 +38,6 @@ class MyThreads implements Runnable{
 	@Override 
 	public void run(){
 		
-		int sum;
-		
 		System.out.println(thread.getName() + " starting..");
 		
 		answer = sa.sumArray(a);
