@@ -20,3 +20,5 @@ public class StaticImport {
 		System.out.println("Second solution: " + x); 
 	}
 }
+
+
