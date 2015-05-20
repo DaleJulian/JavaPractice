@@ -1,28 +1,29 @@
+
 enum MetricSystem{
-	GRAMS,
-	METERS,
-	LITERS
+	GRAMS('g'),
+	METERS('m'),
+	LITERS('l');
+	
+	private char symbol;
+	
+	MetricSystem(char s){
+		symbol = s;
+	}
+	
+	public char getSymbol(){
+		return symbol;
+	}
 }
 
 public class SimpleEnums {
 
 	public static void main(String args[]){
 		
-		MetricSystem unit = null;
-		
-		unit = MetricSystem.GRAMS;
-		System.out.println("Current unit of measurement is in grams.");
-		
-		switch(unit){
-			case GRAMS:
-				System.out.println("Grams measure weight.");
-				break;
-			case METERS:
-				System.out.println("Meters measure length");
-				break;
-			case LITERS:
-				System.out.println("Liters measure volume");
-				break;
+		for(MetricSystem ms : MetricSystem.values()){
+			System.out.println((ms.name() + " " + ms.getSymbol()));
 		}
 	}
 }
+
+
+

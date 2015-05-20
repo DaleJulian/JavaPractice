@@ -31,7 +31,7 @@ public class SimpleMultithreading {
 		System.out.println("Main thread starting..");
 		
 		//Construct a MyThread object
-		MyThreads mt = new MyThreads("Child #1");
+		MyThread mt = new MyThread("Child #1");
 		
 		//construct a thread from mt
 		Thread newThrd = new Thread(mt);
@@ -49,6 +49,8 @@ public class SimpleMultithreading {
 			}
 		}
 		System.out.println("Main thread ending.");
+		
+		Integer gg = new Integer(100);
 	}
 }
 
