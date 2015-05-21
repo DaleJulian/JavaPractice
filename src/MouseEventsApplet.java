@@ -2,6 +2,7 @@ import java.awt.*;
 import java.applet.*;
 import java.awt.event.*;
 
+
 public class MouseEventsApplet extends Applet 
 	implements MouseListener, MouseMotionListener {
 
@@ -64,6 +65,12 @@ public class MouseEventsApplet extends Applet
 	
 	public void paint(Graphics g){
 		g.drawString(msg, mouseX, mouseY);
+	}
+
+	@Override
+	public void mouseMoved(MouseEvent arg0) {
+		// TODO Auto-generated method stub
+		
 	}
 	
 	
